@@ -1,0 +1,24 @@
+li 
+	{
+		float: left;
+	}
+	ul
+	{
+		list-style-type: none;
+		overflow: hidden;
+		margin:0;
+		padding:0;
+		background-color: aqua;
+	}
+	li a
+	{
+		display: inline-block;
+		color:white;
+		text-align: center;
+		padding: 14px 16px;
+		text-decoration: none;
+	}
+	li a:HOVER
+	{
+		background-color: red;
+	}

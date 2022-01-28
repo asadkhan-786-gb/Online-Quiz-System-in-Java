@@ -1,0 +1,22 @@
+//database credentials
+   username = system , password= pass123;
+ --------------------------------------------------------------------------
+//admintable
+create table admintable(userid varchar2(20),password varchar2(20));
+
+insert into admintable values('admin','admin');
+
+------------------------------------------------------------------------------
+//studenttable
+create table studenttable(userid varchar2(20),password varchar2(20),name varchar2(20));
+-------------------------------------------------------------------------------- 
+//instructiontable
+create table instructiontable (instruction varchar2(35));
+--------------------------------------------------------------------------------
+//questiontable
+create table questiontable(question varchar2(40),a varchar2(40),b varchar2(40),c varchar2(40),d varchar2(40),answer varchar2(20));
+------------------------------------------------------------------------------------
+//uniques ids to admins and students
+ALTER TABLE studenttable ADD PRIMARY KEY (USERID);
+
+ALTER TABLE admintable ADD PRIMARY KEY (USERID);
